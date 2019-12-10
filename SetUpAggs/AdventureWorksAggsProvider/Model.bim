@@ -211,6 +211,7 @@
             "name": "DimCustomer",
             "dataView": "full",
             "source": {
+              "type": "query",
               "query": " SELECT [dbo].[DimCustomer].* FROM [dbo].[DimCustomer] ",
               "dataSource": "SqlServer chwadeaggs.database.windows.net chwadeAW"
             }
@@ -355,6 +356,7 @@
             "name": "DimDate",
             "dataView": "full",
             "source": {
+              "type": "query",
               "query": " SELECT [dbo].[DimDate].* FROM [dbo].[DimDate] ",
               "dataSource": "SqlServer chwadeaggs.database.windows.net chwadeAW"
             }
@@ -450,6 +452,7 @@
             "name": "DimGeography",
             "dataView": "full",
             "source": {
+              "type": "query",
               "query": " SELECT [dbo].[DimGeography].* FROM [dbo].[DimGeography] ",
               "dataSource": "SqlServer chwadeaggs.database.windows.net chwadeAW"
             }
@@ -713,6 +716,7 @@
             "name": "DimProduct",
             "dataView": "full",
             "source": {
+              "type": "query",
               "query": " SELECT [dbo].[DimProduct].* FROM [dbo].[DimProduct] ",
               "dataSource": "SqlServer chwadeaggs.database.windows.net chwadeAW"
             }
@@ -772,6 +776,7 @@
             "name": "DimProductCategory",
             "dataView": "full",
             "source": {
+              "type": "query",
               "query": " SELECT [dbo].[DimProductCategory].* FROM [dbo].[DimProductCategory] ",
               "dataSource": "SqlServer chwadeaggs.database.windows.net chwadeAW"
             }
@@ -837,6 +842,7 @@
             "name": "DimProductSubcategory",
             "dataView": "full",
             "source": {
+              "type": "query",
               "query": " SELECT [dbo].[DimProductSubcategory].* FROM [dbo].[DimProductSubcategory] ",
               "dataSource": "SqlServer chwadeaggs.database.windows.net chwadeAW"
             }
@@ -1081,6 +1087,7 @@
             "name": "FactInternetSales",
             "dataView": "full",
             "source": {
+              "type": "query",
               "query": " SELECT [dbo].[FactInternetSales].* FROM [dbo].[FactInternetSales] ",
               "dataSource": "SqlServer chwadeaggs.database.windows.net chwadeAW"
             }
@@ -1166,6 +1173,7 @@
             "name": "FactInternetSalesAgg",
             "dataView": "full",
             "source": {
+              "type": "query",
               "query": " SELECT [dbo].[FactInternetSalesAgg].* FROM [dbo].[FactInternetSalesAgg] ",
               "dataSource": "SqlServer chwadeaggs.database.windows.net chwadeAW"
             }
@@ -1183,6 +1191,19 @@
           {
             "name": "_TM_ExtProp_DbSchemaName",
             "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Nueva Tabla",
+        "description": "Nueva tabla para test",
+        "partitions": [
+          {
+            "name": "New Table",
+            "source": {
+              "type": "query",
+              "dataSource": "SqlServer chwadeaggs.database.windows.net chwadeAW"
+            }
           }
         ]
       }
@@ -1258,6 +1279,5 @@
         "value": "500"
       }
     ]
-  },
-  "id": "SemanticModel"
+  }
 }
